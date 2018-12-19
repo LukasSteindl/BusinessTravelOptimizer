@@ -12,8 +12,6 @@ Since climate change is a major global challenge i decided to open source this s
 
 The software may also be used to simulate global events (like Brexit) and their economical impact. (For example one could change the cost function to incorporate political decisions and simulate their impact on unemployment-rates and income.)
 
-It is free to use on your own risk.
-
 <h1>Installation Instructions</h1>
 
 <ul>
