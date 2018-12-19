@@ -8,9 +8,9 @@ The software is designed to minimize the number of hours consultants spend in ai
 
 Empirical simulations show that the proposed optimizations have the potential to increase the profit of an average international consulting-company by more than 40% while at the same time reducing the travel-related CO²-emission by more than 30% (compared to a naive greedy dispatching strategy).
 
-Since climate change is a major global challenge i decided to open source this software that was part of my bachelor thesis.
+Since climate change is a major global challenge i decided to open source this software as part of my bachelor thesis.
 
-The software may also be used to simulate global events (like Brexit) and their economical impact. (For example one could change the cost function to incorporate political decisions and simulate their impact on unemployment-rates and income.)
+The software may also be used to simulate global events (like the Brexit) and their economical impact. (For example one could change the cost function to incorporate political decisions and simulate their impact on unemployment-rates and income.)
 
 <h1>Installation Instructions</h1>
 
