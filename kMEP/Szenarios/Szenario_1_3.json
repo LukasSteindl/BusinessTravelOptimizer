@@ -1,0 +1,285 @@
+{
+  "ModelEvaluations": 0,
+  "Skills": [
+    "SQL Server Admin",
+    "SQL Server Development",
+    "Windows Server",
+    "Data Factory",
+    "C# Development",
+    "Integration Services",
+    "Reporting Services",
+    "Azure Machine Learning",
+    "SQL Server on Linux"
+  ],
+  "Engineers": [
+    {
+      "Name": "E0",
+      "AssignedRequests": {},
+      "Skills": [
+        "SQL Server Admin",
+        "SQL Server on Linux",
+        "Data Factory",
+        "C# Development"
+      ],
+      "HomeOffice": {
+        "Latitude": 40.03777447,
+        "Longitude": -76.30576644,
+        "City": "Lancaster",
+        "Postcode": "",
+        "Country": "United States of America",
+        "Address": ""
+      }
+    },
+    {
+      "Name": "E1",
+      "AssignedRequests": {},
+      "Skills": [
+        "Windows Server",
+        "Azure Machine Learning",
+        "C# Development",
+        "SQL Server on Linux"
+      ],
+      "HomeOffice": {
+        "Latitude": 64.56379681,
+        "Longitude": -149.0930032,
+        "City": "Nenana",
+        "Postcode": "",
+        "Country": "United States of America",
+        "Address": ""
+      }
+    }
+  ],
+  "Requests": [
+    {
+      "SelectedOption": null,
+      "Duration": 4,
+      "PossibleStartDays": [
+        0,
+        8,
+        24,
+        12,
+        17
+      ],
+      "SkillsRequested": [
+        "Windows Server"
+      ],
+      "RequestLocation": {
+        "Latitude": 14.07200406,
+        "Longitude": -89.09399649,
+        "City": "Chalatenango",
+        "Postcode": "",
+        "Country": "El Salvador",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 4,
+      "PossibleStartDays": [
+        5,
+        3,
+        22,
+        24,
+        2
+      ],
+      "SkillsRequested": [
+        "Windows Server"
+      ],
+      "RequestLocation": {
+        "Latitude": 14.76998863,
+        "Longitude": -88.77999211,
+        "City": "Santa Rosa de Copan",
+        "Postcode": "",
+        "Country": "Honduras",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        6,
+        2,
+        7,
+        17,
+        9
+      ],
+      "SkillsRequested": [
+        "Azure Machine Learning"
+      ],
+      "RequestLocation": {
+        "Latitude": 52.96995668,
+        "Longitude": 36.06998409,
+        "City": "Orel",
+        "Postcode": "",
+        "Country": "Russia",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 3,
+      "PossibleStartDays": [
+        26,
+        10,
+        6,
+        15,
+        16
+      ],
+      "SkillsRequested": [
+        "SQL Server Development"
+      ],
+      "RequestLocation": {
+        "Latitude": 9.940412617,
+        "Longitude": 43.18004106,
+        "City": "Boorama",
+        "Postcode": "",
+        "Country": "Somaliland",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        12,
+        27,
+        4,
+        15,
+        18
+      ],
+      "SkillsRequested": [
+        "Integration Services"
+      ],
+      "RequestLocation": {
+        "Latitude": 37.08371706,
+        "Longitude": -88.60000309,
+        "City": "Paducah",
+        "Postcode": "",
+        "Country": "United States of America",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 2,
+      "PossibleStartDays": [
+        27,
+        24,
+        17,
+        19,
+        25
+      ],
+      "SkillsRequested": [
+        "Reporting Services"
+      ],
+      "RequestLocation": {
+        "Latitude": 39.15423667,
+        "Longitude": -123.2108621,
+        "City": "Ukiah",
+        "Postcode": "",
+        "Country": "United States of America",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        21,
+        3,
+        19,
+        18,
+        0
+      ],
+      "SkillsRequested": [
+        "Integration Services"
+      ],
+      "RequestLocation": {
+        "Latitude": -16.87004393,
+        "Longitude": -64.78001001,
+        "City": "Puerto Villarroel",
+        "Postcode": "",
+        "Country": "Bolivia",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 2,
+      "PossibleStartDays": [
+        15,
+        0,
+        20,
+        18,
+        25
+      ],
+      "SkillsRequested": [
+        "Integration Services"
+      ],
+      "RequestLocation": {
+        "Latitude": 47.04732078,
+        "Longitude": 142.0623775,
+        "City": "Kholmsk",
+        "Postcode": "",
+        "Country": "Russia",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 4,
+      "PossibleStartDays": [
+        6,
+        18,
+        19,
+        20,
+        13
+      ],
+      "SkillsRequested": [
+        "Integration Services"
+      ],
+      "RequestLocation": {
+        "Latitude": -37.48000039,
+        "Longitude": -73.34000431,
+        "City": "Curanilahue",
+        "Postcode": "",
+        "Country": "Chile",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 4,
+      "PossibleStartDays": [
+        21,
+        29,
+        15,
+        7,
+        23
+      ],
+      "SkillsRequested": [
+        "Integration Services"
+      ],
+      "RequestLocation": {
+        "Latitude": -9.109151958,
+        "Longitude": 143.2337226,
+        "City": "Daru",
+        "Postcode": "",
+        "Country": "Papua New Guinea",
+        "Address": ""
+      }
+    }
+  ],
+  "Sequence": [],
+  "Locations": [],
+  "MilageAllowance": -2.0,
+  "AllowTripContinuation": false,
+  "Distances": [],
+  "AvgTravelSpeed": 60,
+  "HourlyWage": -60,
+  "HotelCostPerNight": -150,
+  "RevenuePerDayOnsite": 1640,
+  "AllowUnprofitableRequests": true,
+  "PermutateOptions": false
+}

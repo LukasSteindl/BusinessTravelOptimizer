@@ -1,0 +1,284 @@
+{
+  "ModelEvaluations": 0,
+  "Skills": [
+    "SQL Server Admin",
+    "SQL Server Development",
+    "Windows Server",
+    "Data Factory",
+    "C# Development",
+    "Integration Services",
+    "Reporting Services",
+    "Azure Machine Learning",
+    "SQL Server on Linux"
+  ],
+  "Engineers": [
+    {
+      "Name": "E0",
+      "AssignedRequests": {},
+      "Skills": [
+        "Integration Services",
+        "Reporting Services",
+        "Azure Machine Learning",
+        "SQL Server Admin"
+      ],
+      "HomeOffice": {
+        "Latitude": 43.88973574,
+        "Longitude": 20.33011796,
+        "City": "Pec",
+        "Postcode": "",
+        "Country": "Serbia",
+        "Address": ""
+      }
+    },
+    {
+      "Name": "E1",
+      "AssignedRequests": {},
+      "Skills": [
+        "Reporting Services",
+        "SQL Server Admin",
+        "C# Development"
+      ],
+      "HomeOffice": {
+        "Latitude": 42.82987795,
+        "Longitude": 75.28459306,
+        "City": "Tokmak",
+        "Postcode": "",
+        "Country": "Kyrgyzstan",
+        "Address": ""
+      }
+    }
+  ],
+  "Requests": [
+    {
+      "SelectedOption": null,
+      "Duration": 3,
+      "PossibleStartDays": [
+        16,
+        20,
+        24,
+        9,
+        6
+      ],
+      "SkillsRequested": [
+        "Data Factory"
+      ],
+      "RequestLocation": {
+        "Latitude": 47.2703821,
+        "Longitude": 132.019993,
+        "City": "Fujin",
+        "Postcode": "",
+        "Country": "China",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        18,
+        5,
+        19,
+        26,
+        14
+      ],
+      "SkillsRequested": [
+        "Reporting Services"
+      ],
+      "RequestLocation": {
+        "Latitude": 8.509983133,
+        "Longitude": -80.35998926,
+        "City": "Penonome",
+        "Postcode": "",
+        "Country": "Panama",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 3,
+      "PossibleStartDays": [
+        6,
+        12,
+        14,
+        16,
+        2
+      ],
+      "SkillsRequested": [
+        "SQL Server on Linux"
+      ],
+      "RequestLocation": {
+        "Latitude": 42.03946108,
+        "Longitude": -88.28991866,
+        "City": "Elgin",
+        "Postcode": "",
+        "Country": "United States of America",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 3,
+      "PossibleStartDays": [
+        6,
+        0,
+        29,
+        14,
+        1
+      ],
+      "SkillsRequested": [
+        "Integration Services"
+      ],
+      "RequestLocation": {
+        "Latitude": 62.18259849,
+        "Longitude": -75.65950098,
+        "City": "Salluit",
+        "Postcode": "",
+        "Country": "Canada",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 2,
+      "PossibleStartDays": [
+        19,
+        7,
+        13,
+        10,
+        1
+      ],
+      "SkillsRequested": [
+        "Windows Server"
+      ],
+      "RequestLocation": {
+        "Latitude": 59.19998985,
+        "Longitude": 9.600023558,
+        "City": "Skien",
+        "Postcode": "",
+        "Country": "Norway",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 4,
+      "PossibleStartDays": [
+        12,
+        11,
+        4,
+        1,
+        26
+      ],
+      "SkillsRequested": [
+        "Reporting Services"
+      ],
+      "RequestLocation": {
+        "Latitude": -4.269572735,
+        "Longitude": -41.78999211,
+        "City": "Piripiri",
+        "Postcode": "",
+        "Country": "Brazil",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 3,
+      "PossibleStartDays": [
+        0,
+        7,
+        8,
+        3,
+        21
+      ],
+      "SkillsRequested": [
+        "Azure Machine Learning"
+      ],
+      "RequestLocation": {
+        "Latitude": 13.280363789999999,
+        "Longitude": -16.65994979,
+        "City": "Brikama",
+        "Postcode": "",
+        "Country": "The Gambia",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 2,
+      "PossibleStartDays": [
+        5,
+        3,
+        6,
+        2,
+        4
+      ],
+      "SkillsRequested": [
+        "C# Development"
+      ],
+      "RequestLocation": {
+        "Latitude": 37.50627525,
+        "Longitude": 34.05165767,
+        "City": "Eregli",
+        "Postcode": "",
+        "Country": "Turkey",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 3,
+      "PossibleStartDays": [
+        10,
+        6,
+        7,
+        17,
+        27
+      ],
+      "SkillsRequested": [
+        "Integration Services"
+      ],
+      "RequestLocation": {
+        "Latitude": 43.28997906,
+        "Longitude": 5.37501013,
+        "City": "Marseille",
+        "Postcode": "",
+        "Country": "France",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 2,
+      "PossibleStartDays": [
+        3,
+        21,
+        15,
+        23,
+        18
+      ],
+      "SkillsRequested": [
+        "Azure Machine Learning"
+      ],
+      "RequestLocation": {
+        "Latitude": 23.48002545,
+        "Longitude": 111.3200162,
+        "City": "Wuzhou",
+        "Postcode": "",
+        "Country": "China",
+        "Address": ""
+      }
+    }
+  ],
+  "Sequence": [],
+  "Locations": [],
+  "MilageAllowance": -2.0,
+  "AllowTripContinuation": false,
+  "Distances": [],
+  "AvgTravelSpeed": 60,
+  "HourlyWage": -60,
+  "HotelCostPerNight": -150,
+  "RevenuePerDayOnsite": 1640,
+  "AllowUnprofitableRequests": true,
+  "PermutateOptions": false
+}

@@ -1,0 +1,214 @@
+﻿<Window x:Class="MEPUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF" 
+        xmlns:local="clr-namespace:MEPUI"
+        mc:Ignorable="d"
+        Title="Mitarbeitereinsatzplanung" Height="803" Width="1424" Loaded="Window_Loaded" KeyDown="Window_KeyDown">
+    <Window.Resources>
+        <ContextMenu x:Key="MyContextMenu">
+            <MenuItem x:Name="btnAddEngineer" Header="New Engineer" Click="btnAddEngineer_Click" />
+            <MenuItem x:Name="btnAddRequest" Header="New Request" Click="btnAddRequest_Click" />
+        </ContextMenu>
+        <ContextMenu x:Key="MyRequestContextMenu">
+            <MenuItem x:Name="btnEditRequest" Header="Edit Request" Click="btnEditRequest_Click" />
+            <MenuItem x:Name="btnRemoveRequest" Header="Remove Request" Click="btnRemoveRequest_Click" />
+        </ContextMenu>
+        <ContextMenu x:Key="MyEngineerContextMenu">
+            <MenuItem x:Name="btnEditEngineer" Header="Edit Engineer" Click="btnEditEngineer_Click" />
+            <MenuItem x:Name="btnRemoveEngineer" Header="Remove Engineer" Click="btnRemoveEngineer_Click" />
+        </ContextMenu>
+        <DataTemplate x:Key="SelectedOptions">
+            <m:MapPolyline Locations="{Binding MapLocations}" DataContext="{Binding Ovm}"  Stroke="Blue" StrokeThickness="5" Loaded="MapPolyline_Loaded"/>
+        </DataTemplate>
+        <DataTemplate x:Key="RequestsPins">
+            <m:Pushpin Background="Green" Location="{Binding RequestLocation}">
+                <ToolTipService.ToolTip>
+                    <ToolTip>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="{Binding City}" />
+                            <TextBlock Text="{Binding SkillsRequested}" TextWrapping="Wrap" />
+                        </StackPanel>
+                    </ToolTip>
+                </ToolTipService.ToolTip>
+            </m:Pushpin>
+            
+        </DataTemplate>
+        <DataTemplate x:Key="EngineerPins">
+            <m:Pushpin Background="Orange" Location="{Binding EngineerLocation}">
+                <ToolTipService.ToolTip>
+                    <ToolTip>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="{Binding Name}" />
+                            <TextBlock Text="{Binding Skills}" />
+                        </StackPanel>
+                    </ToolTip>
+                </ToolTipService.ToolTip>
+            </m:Pushpin>
+        </DataTemplate>
+    </Window.Resources>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New" Click="btnNewMEP" />
+                <MenuItem Header="_Open" Click="btnLoadModel" />
+                <MenuItem Header="_Save" Click="btnSaveModel" />
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="_Tools">
+                <MenuItem Header="_Szenario Generator" Click="btnSzenarioGenerator" />
+                <MenuItem Header="_Performance Test" Click="btnPerformanceTest" />
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="_About" Click="btnAbout" />
+             </MenuItem>
+        </Menu>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="300" />
+            </Grid.ColumnDefinitions>
+            <Canvas Grid.Row="0" Grid.ColumnSpan="2">
+                <Canvas.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFD1D5F9" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Canvas.Background>
+                <Label x:Name="lblMISG" Content="Maximum Independent Set Graph" HorizontalAlignment="Left" Margin="489,229,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="lblMap" Content="Map" HorizontalAlignment="Left" Margin="44,93,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="lblCost" Content="{Binding Cost}" HorizontalAlignment="Right" VerticalAlignment="Top" Width="162" Canvas.Left="389" Canvas.Top="93" FontSize="14" FontWeight="Bold" Height="29" Background="#FFF1F1F1" />
+                <Label x:Name="lblSequence" Content="{Binding Sequence}" Canvas.Left="389" Canvas.Top="69" Height="24" Width="508"/>
+                <Button x:Name="btnRunAsync" Content="Solve" Canvas.Left="1289" Canvas.Top="3" Width="53" Click="btnRunAsync_Click" Height="18"/>
+                <CheckBox IsChecked="True" x:Name="cbAllowTripContinuation" Content="Erlaube Gabeleinsätze" Canvas.Left="1036" Canvas.Top="2"/>
+                <CheckBox IsChecked="True" x:Name="cbAllowUnprofitableRequests" ToolTipService.ShowDuration="50000" Content="Lieferung lokal unprofitabler Einsätze wenn Kapazität vorhanden" Canvas.Left="1036" Canvas.Top="38"/>
+
+                <GroupBox x:Name="groupBox" Header="Optimierungs Algorithmus" Canvas.Left="10" Canvas.Top="4" Height="91" Width="374">
+                    <Grid HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="100" Margin="0,-27,0,0">
+                        <RadioButton  IsChecked="True" x:Name="rbGreedy" Content="Greedy" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,27,0,0"/>
+                        <RadioButton x:Name="rbBruteForce" Content="BruteForce" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,43,0,0"/>
+
+                        <RadioButton x:Name="rbInsertion" Content="Nearest Insertion" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,60,-16,-5" Width="115" Click="rbInsertion_Click"/>
+                        <RadioButton x:Name="rbSavings" Content="Savings" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,77,-16,-22" Width="115" Click="rbSavings_Click"/>
+
+
+                        <RadioButton x:Name="rbGeneticAlgorithm" Content="GA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="112,38,-47,0"/>
+                        <RadioButton  x:Name="rbSimulatedAnnealing" Content="SA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="112,74,-45,-19"/>
+                        <Label Content="Generations" Margin="143,19,-117,24" FontSize="10"></Label>
+                        <TextBox  x:Name="txtPopulationSize" Margin="206,38,-146,15" Text="1024" FontSize="10"></TextBox>
+                        <Label Content="Population Size" Margin="200,19,-191,24" FontSize="10"></Label>
+                        <TextBox  x:Name="txtGenerations" Margin="150,38,-78,15" Text="15" FontSize="10"></TextBox>
+
+                        <Label Content="Mutation Probabilty" Margin="270,19,-268,24" FontSize="10"></Label>
+                        <TextBox  x:Name="txtMutationProbability" Margin="275,38,-203,15" Text="5" FontSize="10"></TextBox>
+                        <Label Content="Starttemp" Margin="143,51,-111,-8" FontSize="10"></Label>
+                        <TextBox  x:Name="txtStartTemp" Margin="150,73,-90,-20" Text="10000" FontSize="10"></TextBox>
+                        <Label Content="Steps" Margin="205,51,-173,-8" FontSize="10"></Label>
+                        <TextBox x:Name="txtSteps" Margin="205,73,-152,-20" Text="1024" FontSize="10"></TextBox>
+                        <Label Content="Parallel Annealings" Margin="269,51,-262,-8" FontSize="10"></Label>
+                        <TextBox x:Name="txtParallelAnnealings" Margin="275,73,-203,-20" Text="16" FontSize="10"></TextBox>
+                    </Grid>
+                </GroupBox>
+                <Slider x:Name="sldAvgSpeed" Minimum="10" Maximum="400" Value="{Binding AvgTravelSpeed}" Canvas.Left="389" Canvas.Top="51" Width="122"/>
+                <Label Background="White" Width="122" x:Name="lblAvgSpeed" Content="{Binding AvgTravelSpeedDisplay}" Canvas.Left="389" Canvas.Top="8" Height="38" FontSize="10"/>
+
+                <Slider x:Name="sldAvgWage" Minimum="-400" Maximum="0" Value="{Binding HourlyWage}" Canvas.Left="516" Canvas.Top="51" Width="122"/>
+                <Label Background="White" Width="122" x:Name="lblAvgWage" Content="{Binding HourlyWageDisplay}" Canvas.Left="516" Canvas.Top="8" Height="38" FontSize="10"/>
+
+                <Slider x:Name="sldAvgHotel" Minimum="-400" Maximum="0" Value="{Binding HotelCostPerNight}" Canvas.Left="643" Canvas.Top="51" Width="122"/>
+                <Label Background="White" Width="122" x:Name="lblAvgHotel" Content="{Binding HotelCostPerNightDisplay}" Canvas.Left="643" Canvas.Top="8" Height="38" FontSize="10"/>
+
+                <Slider x:Name="sldAvgMileage" Minimum="-10" Maximum="0" Value="{Binding MilageAllowance}" Canvas.Left="770" Canvas.Top="51" Width="122"/>
+                <Label Background="White" Width="122" x:Name="lblAvgMileage" Content="{Binding MilageAllowanceDisplay}" Canvas.Left="770" Canvas.Top="8" Height="38" FontSize="10"/>
+
+                <Slider x:Name="sldAvgRevenue" Minimum="0" Maximum="5000" Value="{Binding RevenuePerDayOnsite}" Canvas.Left="897" Canvas.Top="51" Width="135"/>
+                <Label Background="White" Width="135" Height="38" x:Name="lblAvgRevenue" Content="{Binding RevenuePerDayOnsiteDisplay}" Canvas.Left="897" Canvas.Top="8" FontSize="10"/>
+                <ProgressBar x:Name="progressSolver" Minimum="0" Maximum="1" Height="21" Canvas.Left="1313" Canvas.Top="58" Width="93"/>
+                <Button x:Name="btnCancle" Content="Cancle" Canvas.Left="1347" Canvas.Top="3" Width="59" Height="18" Click="btnCancle_Click"/>
+                <TextBox x:Name="txtReportProgress" Height="17" Canvas.Left="1160" TextWrapping="Wrap" Text="1024" Canvas.Top="58" Width="49"/>
+                <Label x:Name="lblReportProgressEveryNModelEval" Content="Zwischenergebnis alle " Canvas.Left="1031" Canvas.Top="53"/>
+                <Label Content="Funktionsaufrufe" Canvas.Left="1209" Canvas.Top="53"/>
+                <CheckBox x:Name="cbPermutateOptions" IsChecked="False" Content="Gesamten Lösungsraum prüfen (~10^6!-facher Aufwand)" Canvas.Left="1036" Canvas.Top="21" Click="cbPermutateOptions_Click" Checked="cbPermutateOptions_Checked"/>
+                <CheckBox x:Name="cbMinimalOutput" Content="Minimalausgabe (nur Optimizer Output)" Canvas.Left="1036" Canvas.Top="79"/>
+
+            </Canvas>
+            <TabControl Grid.Row="1" Height="Auto" Width="Auto" Margin="0,0,0,0">
+                <TabItem Header="Karte" Margin="0">
+                    <m:Map ContextMenu="{StaticResource MyContextMenu}" 
+                           CredentialsProvider="AikEnqHVp0BlTn-TRWykY8ezQUseJBqOufjSATqHnMU28UuTpaFxdIFgqfZq_wOU" 
+                           x:Name="myMap" Grid.Row="0" Grid.Column="0" MouseDown="myMap_MouseDown" Margin="0,0,0,0">
+                        <m:MapItemsControl ItemTemplate="{StaticResource SelectedOptions}" ItemsSource="{Binding Routes}"/>
+                        <m:MapItemsControl ItemsSource="{Binding Requests}" ItemTemplate="{StaticResource RequestsPins}"/>
+                        <m:MapItemsControl ItemsSource="{Binding Engineers}" ItemTemplate="{StaticResource EngineerPins}"/>
+                    </m:Map>
+                </TabItem>
+                <TabItem Header="Graph">
+                    <ScrollViewer Grid.Row="0" Grid.Column="1" ScrollViewer.HorizontalScrollBarVisibility="Visible" Margin="0,0,0,0" DockPanel.Dock="Right"  >
+                        <Canvas Width="1024" Height="1024" x:Name="OptionGraph" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Optimizer Output">
+                    <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Visible" Margin="0,0,0,0" DockPanel.Dock="Right"  >
+
+                        <TextBox x:Name="txtOptimizerOutput"></TextBox>
+                    </ScrollViewer>
+                </TabItem>
+
+            </TabControl>
+            <Canvas Grid.Row="3">
+                <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Hauptgasse 42, A-7083 Purbach" VerticalAlignment="Top" Width="242" Canvas.Left="459" Canvas.Top="8"/>
+                <Label x:Name="lblAddress" Content="Adresse" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.553,-0.115" Canvas.Left="402" Canvas.Top="4"/>
+                <Button x:Name="btnAddressSearch" Content="Suchen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="btnAddressSearch_Click" Canvas.Left="716" Canvas.Top="10"/>
+                <Button x:Name="btnZoomIn" Content="Zoom In" Canvas.Left="897" Canvas.Top="11" Width="75" Height="20" Click="btnZoomIn_Click"/>
+                <Button x:Name="btnZoomOut" Content="Zoom Out" Canvas.Left="981" Canvas.Top="11" Width="75" Click="btnZoomOut_Click"/>
+            </Canvas>
+            <TabControl Grid.Row="1" Grid.Column="2" Height="Auto" Width="Auto" Margin="0,0,0,0">
+                <TabItem Header="Mitarbeiter" Margin="0">
+                    <ScrollViewer Grid.Row="0" Grid.Column="1" ScrollViewer.HorizontalScrollBarVisibility="Visible" Margin="0,0,0,0" DockPanel.Dock="Right"  >
+                        <ListBox Width="1000" ContextMenu="{StaticResource MyEngineerContextMenu}" ItemsSource="{Binding Engineers}"  Name="Schedule">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Width="40" Text="{Binding Name}" />
+                                        <ItemsControl ItemsSource="{Binding AssignedRequests}">
+                                            <ItemsControl.ItemsPanel>
+                                                <ItemsPanelTemplate>
+                                                    <Canvas Margin="10,0,0,0" />
+                                                </ItemsPanelTemplate>
+                                            </ItemsControl.ItemsPanel>
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Canvas Margin="{Binding LeftMargin}" Canvas.Top="0" Width="{Binding Width}" Background="YellowGreen" Height="20">
+                                                        <TextBlock Text="{Binding City}" />
+                                                    </Canvas>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Anfragen">
+                    <ListBox ContextMenu="{StaticResource MyRequestContextMenu}"  Name="lstRequests" ItemsSource="{Binding Requests}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Description}" />
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </TabItem>
+            </TabControl>
+        </Grid>
+
+    </DockPanel>
+</Window>

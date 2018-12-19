@@ -1,0 +1,443 @@
+{
+  "ModelEvaluations": 0,
+  "Skills": [
+    "SQL Server Admin",
+    "SQL Server Development",
+    "Windows Server",
+    "Data Factory",
+    "C# Development",
+    "Integration Services",
+    "Reporting Services",
+    "Azure Machine Learning",
+    "SQL Server on Linux"
+  ],
+  "Engineers": [
+    {
+      "Name": "Joe",
+      "AssignedRequests": {},
+      "Skills": [
+        "SQL Server Admin"
+      ],
+      "HomeOffice": {
+        "Latitude": 48.201171363457028,
+        "Longitude": 16.378009377609949,
+        "City": "Vienna",
+        "Postcode": "1030",
+        "Country": "Austria",
+        "Address": "Lothringerstraße 22"
+      }
+    },
+    {
+      "Name": "Mark",
+      "AssignedRequests": {},
+      "Skills": [
+        "SQL Server Admin"
+      ],
+      "HomeOffice": {
+        "Latitude": 50.088295825982982,
+        "Longitude": 14.447982739239507,
+        "City": "Prague",
+        "Postcode": "130 00",
+        "Country": "Czech Republic",
+        "Address": "U Památníku"
+      }
+    },
+    {
+      "Name": "Anna",
+      "AssignedRequests": {},
+      "Skills": [
+        "SQL Server Admin"
+      ],
+      "HomeOffice": {
+        "Latitude": 50.947263945152969,
+        "Longitude": 6.9578683662237806,
+        "City": "Cologne",
+        "Postcode": "50668",
+        "Country": "Germany",
+        "Address": "Turiner Straße 2"
+      }
+    }
+  ],
+  "Requests": [
+    {
+      "SelectedOption": null,
+      "Description": "Altstadt 55,2460,Bruck an der Leitha Duration1",
+      "Duration": 1,
+      "PossibleStartDays": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 48.02173158989082,
+        "Longitude": 16.772625055327779,
+        "City": "Bruck an der Leitha",
+        "Postcode": "2460",
+        "Country": "Austria",
+        "Address": "Altstadt 55"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Description": "Stifterstraße 2,4020,Linz Duration1",
+      "Duration": 1,
+      "PossibleStartDays": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 48.299834838327747,
+        "Longitude": 14.287700897694036,
+        "City": "Linz",
+        "Postcode": "4020",
+        "Country": "Austria",
+        "Address": "Stifterstraße 2"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Description": "Stubenberggasse 9,8010,Graz Duration1",
+      "Duration": 1,
+      "PossibleStartDays": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 47.068260970068984,
+        "Longitude": 15.439984741526107,
+        "City": "Graz",
+        "Postcode": "8010",
+        "Country": "Austria",
+        "Address": "Stubenberggasse 9"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Description": "Lehmäckerweg 5,90449,Nuremberg Duration1",
+      "Duration": 1,
+      "PossibleStartDays": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 49.418728158296673,
+        "Longitude": 11.033809271909583,
+        "City": "Nuremberg",
+        "Postcode": "90449",
+        "Country": "Germany",
+        "Address": "Lehmäckerweg 5"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Description": "Marienstraße 41,70178,Stuttgart Duration1",
+      "Duration": 1,
+      "PossibleStartDays": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 48.770531588628039,
+        "Longitude": 9.1698455139761883,
+        "City": "Stuttgart",
+        "Postcode": "70178",
+        "Country": "Germany",
+        "Address": "Marienstraße 41"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Description": "Fuldaer Straße 34,36093,Künzell Duration1",
+      "Duration": 1,
+      "PossibleStartDays": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 50.545042216727325,
+        "Longitude": 9.7090179458688475,
+        "City": "Künzell",
+        "Postcode": "36093",
+        "Country": "Germany",
+        "Address": "Fuldaer Straße 34"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Description": "Grünaustraße 14,94032,Passau Duration1",
+      "Duration": 1,
+      "PossibleStartDays": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 48.572666344055605,
+        "Longitude": 13.454863813860571,
+        "City": "Passau",
+        "Postcode": "94032",
+        "Country": "Germany",
+        "Address": "Grünaustraße 14"
+      }
+    }
+  ],
+  "Sequence": [],
+  "Locations": [
+    {
+      "Latitude": 48.02173158989082,
+      "Longitude": 16.772625055327779,
+      "City": "Bruck an der Leitha",
+      "Postcode": "2460",
+      "Country": "Austria",
+      "Address": "Altstadt 55"
+    },
+    {
+      "Latitude": 48.299834838327747,
+      "Longitude": 14.287700897694036,
+      "City": "Linz",
+      "Postcode": "4020",
+      "Country": "Austria",
+      "Address": "Stifterstraße 2"
+    },
+    {
+      "Latitude": 47.068260970068984,
+      "Longitude": 15.439984741526107,
+      "City": "Graz",
+      "Postcode": "8010",
+      "Country": "Austria",
+      "Address": "Stubenberggasse 9"
+    },
+    {
+      "Latitude": 49.418728158296673,
+      "Longitude": 11.033809271909583,
+      "City": "Nuremberg",
+      "Postcode": "90449",
+      "Country": "Germany",
+      "Address": "Lehmäckerweg 5"
+    },
+    {
+      "Latitude": 48.770531588628039,
+      "Longitude": 9.1698455139761883,
+      "City": "Stuttgart",
+      "Postcode": "70178",
+      "Country": "Germany",
+      "Address": "Marienstraße 41"
+    },
+    {
+      "Latitude": 50.545042216727325,
+      "Longitude": 9.7090179458688475,
+      "City": "Künzell",
+      "Postcode": "36093",
+      "Country": "Germany",
+      "Address": "Fuldaer Straße 34"
+    },
+    {
+      "Latitude": 48.572666344055605,
+      "Longitude": 13.454863813860571,
+      "City": "Passau",
+      "Postcode": "94032",
+      "Country": "Germany",
+      "Address": "Grünaustraße 14"
+    },
+    {
+      "Latitude": 48.201171363457028,
+      "Longitude": 16.378009377609949,
+      "City": "Vienna",
+      "Postcode": "1030",
+      "Country": "Austria",
+      "Address": "Lothringerstraße 22"
+    },
+    {
+      "Latitude": 50.088295825982982,
+      "Longitude": 14.447982739239507,
+      "City": "Prague",
+      "Postcode": "130 00",
+      "Country": "Czech Republic",
+      "Address": "U Památníku"
+    },
+    {
+      "Latitude": 50.947263945152969,
+      "Longitude": 6.9578683662237806,
+      "City": "Cologne",
+      "Postcode": "50668",
+      "Country": "Germany",
+      "Address": "Turiner Straße 2"
+    }
+  ],
+  "MilageAllowance": -2.0,
+  "AllowTripContinuation": false,
+  "Distances": [
+    [
+      0.0,
+      186.87859458129231,
+      145.75382931781829,
+      448.59884901895589,
+      567.21444770252447,
+      583.80401357572146,
+      252.93626207506318,
+      35.446446065200085,
+      285.44957080981106,
+      779.2534179030564
+    ],
+    [
+      186.87859458129231,
+      0.0,
+      161.84216652656247,
+      268.56282044495288,
+      380.36443276514836,
+      414.60780308007571,
+      68.521773169346019,
+      155.15397410882093,
+      199.20841985529052,
+      604.11580288301172
+    ],
+    [
+      145.75382931781829,
+      161.84216652656247,
+      0.0,
+      417.93729703285749,
+      503.94153622079483,
+      570.31274825814887,
+      223.48083505531895,
+      144.25209254965768,
+      343.64191230037881,
+      753.4442974352005
+    ],
+    [
+      448.59884901895589,
+      268.56282044495288,
+      417.93729703285749,
+      0.0,
+      153.66378157134227,
+      157.02288970978714,
+      200.11026129341704,
+      413.993731863191,
+      256.29972309287581,
+      336.25328802955858
+    ],
+    [
+      567.21444770252447,
+      380.36443276514836,
+      503.94153622079483,
+      153.66378157134227,
+      "NaN",
+      201.09570974051246,
+      315.37617113204408,
+      534.79910731168786,
+      408.75724693476548,
+      289.325186124102
+    ],
+    [
+      583.80401357572146,
+      414.60780308007571,
+      570.31274825814887,
+      157.02288970978714,
+      201.09570974051246,
+      0.0,
+      347.91772511904668,
+      548.41102930276554,
+      340.23043878319027,
+      198.65602769872521
+    ],
+    [
+      252.93626207506318,
+      68.521773169346019,
+      223.48083505531895,
+      200.11026129341704,
+      315.37617113204408,
+      347.91772511904668,
+      0.0,
+      219.75975860600141,
+      183.2485844995916,
+      535.92559974923722
+    ],
+    [
+      35.446446065200085,
+      155.15397410882093,
+      144.25209254965768,
+      413.993731863191,
+      534.79910731168786,
+      548.41102930276554,
+      219.75975860600141,
+      0.0,
+      252.44939106955565,
+      744.01553059257424
+    ],
+    [
+      285.44957080981106,
+      199.20841985529052,
+      343.64191230037881,
+      256.29972309287581,
+      408.75724693476548,
+      340.23043878319027,
+      183.2485844995916,
+      252.44939106955565,
+      9.4935297966003418E-05,
+      537.86318431843051
+    ],
+    [
+      779.2534179030564,
+      604.11580288301172,
+      753.4442974352005,
+      336.25328802955858,
+      289.325186124102,
+      198.65602769872521,
+      535.92559974923722,
+      744.01553059257424,
+      537.86318431843051,
+      0.0
+    ]
+  ],
+  "AvgTravelSpeed": 60,
+  "HourlyWage": -60,
+  "HotelCostPerNight": -150,
+  "RevenuePerDayOnsite": 1640,
+  "AllowUnprofitableRequests": true
+}

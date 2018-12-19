@@ -1,0 +1,161 @@
+{
+  "ModelEvaluations": 0,
+  "Skills": [
+    "SQL Server Admin",
+    "SQL Server Development",
+    "Windows Server",
+    "Data Factory",
+    "C# Development",
+    "Integration Services",
+    "Reporting Services",
+    "Azure Machine Learning",
+    "SQL Server on Linux"
+  ],
+  "Engineers": [
+    {
+      "Name": "Joe",
+      "AssignedRequests": {},
+      "Skills": [
+        "SQL Server Admin",
+        "SQL Server Development",
+        "Windows Server",
+        "Data Factory",
+        "C# Development",
+        "Integration Services",
+        "Reporting Services",
+        "Azure Machine Learning",
+        "SQL Server on Linux"
+      ],
+      "HomeOffice": {
+        "Latitude": 48.253217975748576,
+        "Longitude": 16.282880123073774,
+        "City": "Vienna",
+        "Postcode": "1170",
+        "Country": "Austria",
+        "Address": "Waldrandweg 66"
+      }
+    },
+    {
+      "Name": "Newbie",
+      "AssignedRequests": {},
+      "Skills": [
+        "SQL Server Admin"
+      ],
+      "HomeOffice": {
+        "Latitude": 48.361446004249991,
+        "Longitude": 16.598164628239026,
+        "City": "Bockfließ",
+        "Postcode": "2213",
+        "Country": "Austria",
+        "Address": "Schlossgasse 12"
+      }
+    }
+  ],
+  "Requests": [
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        1
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 48.152310737955347,
+        "Longitude": 16.005286158750192,
+        "City": "Pressbaum",
+        "Postcode": "3021",
+        "Country": "Austria",
+        "Address": null
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        1
+      ],
+      "SkillsRequested": [
+        "SQL Server Development"
+      ],
+      "RequestLocation": {
+        "Latitude": 47.113084020560677,
+        "Longitude": 15.532665562106342,
+        "City": "Kainbach bei Graz",
+        "Postcode": "8044",
+        "Country": "Austria",
+        "Address": "Schaftal 60"
+      }
+    }
+  ],
+  "Sequence": [],
+  "Locations": [
+    {
+      "Latitude": 48.152310737955347,
+      "Longitude": 16.005286158750192,
+      "City": "Pressbaum",
+      "Postcode": "3021",
+      "Country": "Austria",
+      "Address": null
+    },
+    {
+      "Latitude": 47.113084020560677,
+      "Longitude": 15.532665562106342,
+      "City": "Kainbach bei Graz",
+      "Postcode": "8044",
+      "Country": "Austria",
+      "Address": "Schaftal 60"
+    },
+    {
+      "Latitude": 48.253217975748576,
+      "Longitude": 16.282880123073774,
+      "City": "Vienna",
+      "Postcode": "1170",
+      "Country": "Austria",
+      "Address": "Waldrandweg 66"
+    },
+    {
+      "Latitude": 48.361446004249991,
+      "Longitude": 16.598164628239026,
+      "City": "Bockfließ",
+      "Postcode": "2213",
+      "Country": "Austria",
+      "Address": "Schlossgasse 12"
+    }
+  ],
+  "MilageAllowance": -1.0,
+  "AllowTripContinuation": true,
+  "Distances": [
+    [
+      0.0,
+      120.86100364304706,
+      23.433626265028984,
+      49.671998822374434
+    ],
+    [
+      120.86100364304706,
+      0.0,
+      138.65776290265714,
+      160.050968410781
+    ],
+    [
+      23.433626265028984,
+      138.65776290265714,
+      0.0,
+      26.240608177097037
+    ],
+    [
+      49.671998822374434,
+      160.050968410781,
+      26.240608177097037,
+      0.0
+    ]
+  ],
+  "AvgTravelSpeed": 400,
+  "HourlyWage": -60,
+  "HotelCostPerNight": -120,
+  "RevenuePerDayOnsite": 1640,
+  "AllowUnprofitableRequests": true,
+  "PermutateOptions": false
+}

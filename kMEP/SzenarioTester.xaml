@@ -1,0 +1,22 @@
+﻿<Window x:Class="MEPUI.SzenarioTester"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MEPUI"
+        mc:Ignorable="d"
+        Title="SzenarioTester" Height="382.412" Width="343.556">
+    <Grid>
+        <CheckBox x:Name="cbSA" Content="SA" HorizontalAlignment="Left" Margin="24,42,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbGA" Content="GA" HorizontalAlignment="Left" Margin="24,62,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="OK" HorizontalAlignment="Left" Margin="250,321,0,0" VerticalAlignment="Top" Width="76" Click="button_Click"/>
+        <Button x:Name="button1" Content="Cancle" HorizontalAlignment="Left" Margin="170,321,0,0" VerticalAlignment="Top" Width="75" IsCancel="True"/>
+        <CheckBox x:Name="cbGreedy" Content="Greedy" HorizontalAlignment="Left" Margin="24,84,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbInsertion" Content="Insertion" HorizontalAlignment="Left" Margin="24,104,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbSavings" Content="Savings" HorizontalAlignment="Left" Margin="24,124,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstScenarios" HorizontalAlignment="Left" Height="264" Margin="108,42,0,0" VerticalAlignment="Top" Width="219" SelectionMode="Extended"/>
+        <Label x:Name="label" Content="Algorithmus" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Szenario" HorizontalAlignment="Left" Margin="170,11,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

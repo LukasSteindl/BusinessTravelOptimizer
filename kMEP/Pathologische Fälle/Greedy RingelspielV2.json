@@ -1,0 +1,308 @@
+{
+  "ModelEvaluations": 0,
+  "Skills": [
+    "SQL Server Admin",
+    "SQL Server Development",
+    "Windows Server",
+    "Data Factory",
+    "C# Development",
+    "Integration Services",
+    "Reporting Services",
+    "Azure Machine Learning",
+    "SQL Server on Linux"
+  ],
+  "Engineers": [
+    {
+      "Name": "Alleskoenner",
+      "AssignedRequests": {},
+      "Skills": [
+        "C# Development",
+        "SQL Server Admin"
+      ],
+      "HomeOffice": {
+        "Latitude": 48.221190792763132,
+        "Longitude": 16.342990860732009,
+        "City": "Vienna",
+        "Postcode": "1180",
+        "Country": "Austria",
+        "Address": "Währinger Gürtel 33"
+      }
+    },
+    {
+      "Name": "Azubi",
+      "AssignedRequests": {},
+      "Skills": [
+        "SQL Server Admin"
+      ],
+      "HomeOffice": {
+        "Latitude": 48.19397552978652,
+        "Longitude": 16.511130812109517,
+        "City": "Vienna",
+        "Postcode": "1220",
+        "Country": "Austria",
+        "Address": "Napoleons Schanze"
+      }
+    },
+    {
+      "Name": "superman",
+      "AssignedRequests": {},
+      "Skills": [
+        "C# Development"
+      ],
+      "HomeOffice": {
+        "Latitude": 47.043091092314349,
+        "Longitude": 8.6289254341453656,
+        "City": "Schwyz",
+        "Postcode": "6423",
+        "Country": "Switzerland",
+        "Address": "Schlagstrasse"
+      }
+    },
+    {
+      "Name": "Devtyp",
+      "AssignedRequests": {},
+      "Skills": [
+        "C# Development"
+      ],
+      "HomeOffice": {
+        "Latitude": 53.498261102347819,
+        "Longitude": 11.904385476565436,
+        "City": "Obere Warnow",
+        "Postcode": null,
+        "Country": "Germany",
+        "Address": null
+      }
+    }
+  ],
+  "Requests": [
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        1
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 52.469632485692607,
+        "Longitude": 13.339438449734256,
+        "City": "Berlin",
+        "Postcode": "12159",
+        "Country": "Germany",
+        "Address": "WielandStraße 25A"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        1
+      ],
+      "SkillsRequested": [
+        "C# Development"
+      ],
+      "RequestLocation": {
+        "Latitude": 48.065673260907168,
+        "Longitude": 16.317750924505077,
+        "City": "Guntramsdorf",
+        "Postcode": "2353",
+        "Country": "Austria",
+        "Address": "Ozeanstraße 8"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        1
+      ],
+      "SkillsRequested": [
+        "C# Development"
+      ],
+      "RequestLocation": {
+        "Latitude": 47.368961373678751,
+        "Longitude": 8.502691919196721,
+        "City": "Zurich",
+        "Postcode": "8055",
+        "Country": "Switzerland",
+        "Address": "Birmensdorferstrasse 405"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        1
+      ],
+      "SkillsRequested": [
+        "C# Development"
+      ],
+      "RequestLocation": {
+        "Latitude": 52.664521685535341,
+        "Longitude": 12.81311872936155,
+        "City": "Hertefeld",
+        "Postcode": "14641",
+        "Country": "Germany",
+        "Address": "Hertefelder DorfStraße 11F"
+      }
+    }
+  ],
+  "Sequence": [],
+  "Locations": [
+    {
+      "Latitude": 52.469632485692607,
+      "Longitude": 13.339438449734256,
+      "City": "Berlin",
+      "Postcode": "12159",
+      "Country": "Germany",
+      "Address": "WielandStraße 25A"
+    },
+    {
+      "Latitude": 48.065673260907168,
+      "Longitude": 16.317750924505077,
+      "City": "Guntramsdorf",
+      "Postcode": "2353",
+      "Country": "Austria",
+      "Address": "Ozeanstraße 8"
+    },
+    {
+      "Latitude": 47.368961373678751,
+      "Longitude": 8.502691919196721,
+      "City": "Zurich",
+      "Postcode": "8055",
+      "Country": "Switzerland",
+      "Address": "Birmensdorferstrasse 405"
+    },
+    {
+      "Latitude": 52.664521685535341,
+      "Longitude": 12.81311872936155,
+      "City": "Hertefeld",
+      "Postcode": "14641",
+      "Country": "Germany",
+      "Address": "Hertefelder DorfStraße 11F"
+    },
+    {
+      "Latitude": 48.221190792763132,
+      "Longitude": 16.342990860732009,
+      "City": "Vienna",
+      "Postcode": "1180",
+      "Country": "Austria",
+      "Address": "Währinger Gürtel 33"
+    },
+    {
+      "Latitude": 48.19397552978652,
+      "Longitude": 16.511130812109517,
+      "City": "Vienna",
+      "Postcode": "1220",
+      "Country": "Austria",
+      "Address": "Napoleons Schanze"
+    },
+    {
+      "Latitude": 47.043091092314349,
+      "Longitude": 8.6289254341453656,
+      "City": "Schwyz",
+      "Postcode": "6423",
+      "Country": "Switzerland",
+      "Address": "Schlagstrasse"
+    },
+    {
+      "Latitude": 53.498261102347819,
+      "Longitude": 11.904385476565436,
+      "City": "Obere Warnow",
+      "Postcode": null,
+      "Country": "Germany",
+      "Address": null
+    }
+  ],
+  "MilageAllowance": -2.0,
+  "AllowTripContinuation": true,
+  "Distances": [
+    [
+      0.0,
+      533.37735732171268,
+      664.1815787664766,
+      41.65370915258314,
+      518.14467952510427,
+      525.91209485900549,
+      691.46170527818265,
+      149.36374978943027
+    ],
+    [
+      533.37735732171268,
+      0.0,
+      589.49795578402541,
+      568.42129106615994,
+      17.393868166044456,
+      20.236441042662889,
+      587.83394547318665,
+      678.7919643628411
+    ],
+    [
+      664.1815787664766,
+      589.49795578402541,
+      9.4935297966003418E-05,
+      664.22970980880973,
+      593.00715438779355,
+      605.08230192005988,
+      37.468874735402736,
+      722.66673218556662
+    ],
+    [
+      41.65370915258314,
+      568.42129106615994,
+      664.22970980880973,
+      0.0,
+      553.54556297400143,
+      561.71592521691434,
+      693.03790704595372,
+      110.80757028632171
+    ],
+    [
+      518.14467952510427,
+      17.393868166044456,
+      593.00715438779355,
+      553.54556297400143,
+      0.0,
+      12.822079900515044,
+      592.41723855027419,
+      664.0503675565609
+    ],
+    [
+      525.91209485900549,
+      20.236441042662889,
+      605.08230192005988,
+      561.71592521691434,
+      12.822079900515044,
+      9.4935297966003418E-05,
+      604.198553268803,
+      672.33840739383993
+    ],
+    [
+      691.46170527818265,
+      587.83394547318665,
+      37.468874735402736,
+      693.03790704595372,
+      592.41723855027419,
+      604.198553268803,
+      0.0,
+      754.3792243371006
+    ],
+    [
+      149.36374978943027,
+      678.7919643628411,
+      722.66673218556662,
+      110.80757028632171,
+      664.0503675565609,
+      672.33840739383993,
+      754.3792243371006,
+      0.0
+    ]
+  ],
+  "AvgTravelSpeed": 400,
+  "HourlyWage": -85,
+  "HotelCostPerNight": -120,
+  "RevenuePerDayOnsite": 1640,
+  "AllowUnprofitableRequests": true,
+  "PermutateOptions": false
+}

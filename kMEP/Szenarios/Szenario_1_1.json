@@ -1,0 +1,284 @@
+{
+  "ModelEvaluations": 0,
+  "Skills": [
+    "SQL Server Admin",
+    "SQL Server Development",
+    "Windows Server",
+    "Data Factory",
+    "C# Development",
+    "Integration Services",
+    "Reporting Services",
+    "Azure Machine Learning",
+    "SQL Server on Linux"
+  ],
+  "Engineers": [
+    {
+      "Name": "E0",
+      "AssignedRequests": {},
+      "Skills": [
+        "C# Development",
+        "SQL Server Development",
+        "Integration Services",
+        "SQL Server Admin"
+      ],
+      "HomeOffice": {
+        "Latitude": -0.879598776,
+        "Longitude": 14.82001501,
+        "City": "Ewo",
+        "Postcode": "",
+        "Country": "Congo (Brazzaville)",
+        "Address": ""
+      }
+    },
+    {
+      "Name": "E1",
+      "AssignedRequests": {},
+      "Skills": [
+        "Data Factory",
+        "SQL Server Development",
+        "SQL Server on Linux"
+      ],
+      "HomeOffice": {
+        "Latitude": 32.29881533,
+        "Longitude": -90.18499679,
+        "City": "Jackson",
+        "Postcode": "",
+        "Country": "United States of America",
+        "Address": ""
+      }
+    }
+  ],
+  "Requests": [
+    {
+      "SelectedOption": null,
+      "Duration": 3,
+      "PossibleStartDays": [
+        24,
+        27,
+        17,
+        7,
+        22
+      ],
+      "SkillsRequested": [
+        "SQL Server on Linux"
+      ],
+      "RequestLocation": {
+        "Latitude": 40.5199931,
+        "Longitude": 34.95000077,
+        "City": "Corum",
+        "Postcode": "",
+        "Country": "Turkey",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 4,
+      "PossibleStartDays": [
+        20,
+        7,
+        19,
+        8,
+        3
+      ],
+      "SkillsRequested": [
+        "Reporting Services"
+      ],
+      "RequestLocation": {
+        "Latitude": -10.72959186,
+        "Longitude": 38.79994665,
+        "City": "Masasi",
+        "Postcode": "",
+        "Country": "Tanzania",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 4,
+      "PossibleStartDays": [
+        17,
+        9,
+        20,
+        16,
+        24
+      ],
+      "SkillsRequested": [
+        "Windows Server"
+      ],
+      "RequestLocation": {
+        "Latitude": 33.60005373,
+        "Longitude": 69.21462764,
+        "City": "Gardiz",
+        "Postcode": "",
+        "Country": "Afghanistan",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 3,
+      "PossibleStartDays": [
+        18,
+        11,
+        6,
+        4,
+        8
+      ],
+      "SkillsRequested": [
+        "C# Development"
+      ],
+      "RequestLocation": {
+        "Latitude": 30.8328583,
+        "Longitude": -83.27859664,
+        "City": "Valdosta",
+        "Postcode": "",
+        "Country": "United States of America",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 2,
+      "PossibleStartDays": [
+        0,
+        13,
+        11,
+        5,
+        26
+      ],
+      "SkillsRequested": [
+        "Reporting Services"
+      ],
+      "RequestLocation": {
+        "Latitude": 27.53330409,
+        "Longitude": 83.38329953,
+        "City": "Bhairawa",
+        "Postcode": "",
+        "Country": "Nepal",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 4,
+      "PossibleStartDays": [
+        26,
+        18,
+        6,
+        15,
+        9
+      ],
+      "SkillsRequested": [
+        "SQL Server on Linux"
+      ],
+      "RequestLocation": {
+        "Latitude": 54.70000612,
+        "Longitude": 20.49734289,
+        "City": "Kaliningrad",
+        "Postcode": "",
+        "Country": "Russia",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 4,
+      "PossibleStartDays": [
+        26,
+        10,
+        11,
+        8,
+        4
+      ],
+      "SkillsRequested": [
+        "Data Factory"
+      ],
+      "RequestLocation": {
+        "Latitude": 32.63329815,
+        "Longitude": 65.86669865,
+        "City": "Tarin Kowt",
+        "Postcode": "",
+        "Country": "Afghanistan",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 2,
+      "PossibleStartDays": [
+        19,
+        20,
+        4,
+        12,
+        18
+      ],
+      "SkillsRequested": [
+        "SQL Server Development"
+      ],
+      "RequestLocation": {
+        "Latitude": 33.83001385,
+        "Longitude": -84.39994938,
+        "City": "Atlanta",
+        "Postcode": "",
+        "Country": "United States of America",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 3,
+      "PossibleStartDays": [
+        1,
+        17,
+        2,
+        16,
+        19
+      ],
+      "SkillsRequested": [
+        "SQL Server on Linux"
+      ],
+      "RequestLocation": {
+        "Latitude": 16.32999599,
+        "Longitude": -86.51899761,
+        "City": "Roatan",
+        "Postcode": "",
+        "Country": "Honduras",
+        "Address": ""
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        17,
+        22,
+        20,
+        5,
+        15
+      ],
+      "SkillsRequested": [
+        "Integration Services"
+      ],
+      "RequestLocation": {
+        "Latitude": 47.5328467,
+        "Longitude": 134.7474751,
+        "City": "Vyazemskiy",
+        "Postcode": "",
+        "Country": "Russia",
+        "Address": ""
+      }
+    }
+  ],
+  "Sequence": [],
+  "Locations": [],
+  "MilageAllowance": -2.0,
+  "AllowTripContinuation": false,
+  "Distances": [],
+  "AvgTravelSpeed": 60,
+  "HourlyWage": -60,
+  "HotelCostPerNight": -150,
+  "RevenuePerDayOnsite": 1640,
+  "AllowUnprofitableRequests": true,
+  "PermutateOptions": false
+}

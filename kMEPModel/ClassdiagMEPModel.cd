@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="MEPModel.Engineer">
+    <Position X="4.5" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EEAEIBAAAAAAAAAAgAAAAIQAAQAEAAAAAAgAAACIAAA=</HashCode>
+      <FileName>Engineer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="HomeOffice" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MEPModel.MEP">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Engineers" Type="MEPModel.Engineer">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.225" Y="-0.311" Height="0.182" Width="1.964" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Requests" Type="MEPModel.Request" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.75" Y="4.236" />
+        <Point X="3.125" Y="4.236" />
+        <Point X="3.125" Y="5.625" />
+        <Point X="4.25" Y="5.625" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.182" Y="0.144" Height="0.182" Width="1.803" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Locations" Type="MEPModel.Location">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.895" Y="0.863" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>E8QEABEAEIDHG6SAEIIAAYIyBEJASARQkxIJwhNdSUA=</HashCode>
+      <FileName>MEP.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Engineers" />
+      <Property Name="Options" />
+      <Property Name="Requests" />
+      <Property Name="Locations" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MEPModel.Option">
+    <Position X="7.75" Y="2.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="MEPModel.Option.OptionState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Option.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAgBAQAAAAAABCAAAAQgAEGAAABBgAAAwA=</HashCode>
+      <FileName>Option.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="E" />
+      <Property Name="R" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MEPModel.Request">
+    <Position X="4.25" Y="4.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="RequestLocation" Type="MEPModel.Location">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.344" Y="1.042" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEAAhAIAAAAqAAQAAAAAAAAAAAAAAAAAABAAIABQAIQ=</HashCode>
+      <FileName>Request.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SelectedOption" />
+      <Property Name="RequestLocation" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.464" />
+  </Class>
+  <Class Name="MEPModel.Location">
+    <Position X="10" Y="1.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAEAAAAAMAAAIiAAACIIAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Solver.GreedySolver">
+    <Position X="4.25" Y="10" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Solver.Solver">
+    <Position X="7" Y="7.25" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Field Name="model" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Solver.GeneticSolver">
+    <Position X="6.5" Y="11.75" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Solver.NearestInsertionSolver">
+    <Position X="8.25" Y="10" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Solver.SavingsSolver">
+    <Position X="10.75" Y="10" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Solver.SimulatedAnnealingSolver">
+    <Position X="8.75" Y="11.75" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Solver.BruteForceSolver">
+    <Position X="6.25" Y="10" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="Solver.ISolvable">
+    <Position X="0.5" Y="7.25" Width="3.25" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,124 @@
+{
+  "ModelEvaluations": 0,
+  "Skills": [
+    "SQL Server Admin",
+    "SQL Server Development",
+    "Windows Server",
+    "Data Factory",
+    "C# Development",
+    "Integration Services",
+    "Reporting Services",
+    "Azure Machine Learning",
+    "SQL Server on Linux"
+  ],
+  "Engineers": [
+    {
+      "Name": "Lukas",
+      "AssignedRequests": {},
+      "Skills": [
+        "SQL Server Admin",
+        "SQL Server Development",
+        "Windows Server",
+        "Data Factory"
+      ],
+      "HomeOffice": {
+        "Latitude": 48.226489835922209,
+        "Longitude": 16.328178801730317,
+        "City": "Vienna",
+        "Postcode": "1170",
+        "Country": "Austria",
+        "Address": "Händelgasse 3"
+      }
+    }
+  ],
+  "Requests": [
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        1
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 47.370579508355775,
+        "Longitude": 9.0563065349750982,
+        "City": "Mosnang",
+        "Postcode": "9601",
+        "Country": "Switzerland",
+        "Address": "Hätschbergstrasse"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        1
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 48.145949651233394,
+        "Longitude": 16.525903425297678,
+        "City": "Schwechat",
+        "Postcode": "2320",
+        "Country": "Austria",
+        "Address": null
+      }
+    }
+  ],
+  "Sequence": [],
+  "Locations": [
+    {
+      "Latitude": 47.370579508355775,
+      "Longitude": 9.0563065349750982,
+      "City": "Mosnang",
+      "Postcode": "9601",
+      "Country": "Switzerland",
+      "Address": "Hätschbergstrasse"
+    },
+    {
+      "Latitude": 48.145949651233394,
+      "Longitude": 16.525903425297678,
+      "City": "Schwechat",
+      "Postcode": "2320",
+      "Country": "Austria",
+      "Address": null
+    },
+    {
+      "Latitude": 48.226489835922209,
+      "Longitude": 16.328178801730317,
+      "City": "Vienna",
+      "Postcode": "1170",
+      "Country": "Austria",
+      "Address": "Händelgasse 3"
+    }
+  ],
+  "MilageAllowance": -1.0,
+  "AllowTripContinuation": true,
+  "Distances": [
+    [
+      0.0,
+      564.74992270971165,
+      551.220142211622
+    ],
+    [
+      564.74992270971165,
+      0.0,
+      17.177588466583657
+    ],
+    [
+      551.220142211622,
+      17.177588466583657,
+      0.0
+    ]
+  ],
+  "AvgTravelSpeed": 400,
+  "HourlyWage": -60,
+  "HotelCostPerNight": -120,
+  "RevenuePerDayOnsite": 1640,
+  "AllowUnprofitableRequests": true,
+  "PermutateOptions": false
+}

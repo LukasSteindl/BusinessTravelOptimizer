@@ -1,0 +1,257 @@
+{
+  "ModelEvaluations": 0,
+  "Skills": [
+    "SQL Server Admin",
+    "SQL Server Development",
+    "Windows Server",
+    "Data Factory",
+    "C# Development",
+    "Integration Services",
+    "Reporting Services",
+    "Azure Machine Learning",
+    "SQL Server on Linux"
+  ],
+  "Engineers": [
+    {
+      "Name": "Joe",
+      "AssignedRequests": {},
+      "Skills": [
+        "SQL Server Admin"
+      ],
+      "HomeOffice": {
+        "Latitude": 48.2049196998139,
+        "Longitude": 16.292638348827975,
+        "City": "Vienna",
+        "Postcode": "1140",
+        "Country": "Austria",
+        "Address": "Ferdinand-Piatnik-Weg 2"
+      }
+    }
+  ],
+  "Requests": [
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 47.248365472843339,
+        "Longitude": 11.514762130031414,
+        "City": "Rinn",
+        "Postcode": "6074",
+        "Country": "Austria",
+        "Address": "Am Lavierenbach"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 47.051254429975423,
+        "Longitude": 15.371989129621827,
+        "City": "Graz",
+        "Postcode": "8052",
+        "Country": "Austria",
+        "Address": "Hofstättenweg 8"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 48.148713546318874,
+        "Longitude": 11.626242679152519,
+        "City": "Munich",
+        "Postcode": "81925",
+        "Country": "Germany",
+        "Address": "DaphneStraße 10"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 47.533221036365028,
+        "Longitude": 19.003080466828873,
+        "City": "Budapest",
+        "Postcode": "1025",
+        "Country": "Hungary",
+        "Address": "Verecke út 72"
+      }
+    },
+    {
+      "SelectedOption": null,
+      "Duration": 1,
+      "PossibleStartDays": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "SkillsRequested": [
+        "SQL Server Admin"
+      ],
+      "RequestLocation": {
+        "Latitude": 50.058724144295844,
+        "Longitude": 14.454674062687594,
+        "City": "Prague",
+        "Postcode": "140 00",
+        "Country": "Czech Republic",
+        "Address": null
+      }
+    }
+  ],
+  "Sequence": [],
+  "Locations": [
+    {
+      "Latitude": 47.248365472843339,
+      "Longitude": 11.514762130031414,
+      "City": "Rinn",
+      "Postcode": "6074",
+      "Country": "Austria",
+      "Address": "Am Lavierenbach"
+    },
+    {
+      "Latitude": 47.051254429975423,
+      "Longitude": 15.371989129621827,
+      "City": "Graz",
+      "Postcode": "8052",
+      "Country": "Austria",
+      "Address": "Hofstättenweg 8"
+    },
+    {
+      "Latitude": 48.148713546318874,
+      "Longitude": 11.626242679152519,
+      "City": "Munich",
+      "Postcode": "81925",
+      "Country": "Germany",
+      "Address": "DaphneStraße 10"
+    },
+    {
+      "Latitude": 47.533221036365028,
+      "Longitude": 19.003080466828873,
+      "City": "Budapest",
+      "Postcode": "1025",
+      "Country": "Hungary",
+      "Address": "Verecke út 72"
+    },
+    {
+      "Latitude": 50.058724144295844,
+      "Longitude": 14.454674062687594,
+      "City": "Prague",
+      "Postcode": "140 00",
+      "Country": "Czech Republic",
+      "Address": null
+    },
+    {
+      "Latitude": 48.2049196998139,
+      "Longitude": 16.292638348827975,
+      "City": "Vienna",
+      "Postcode": "1140",
+      "Country": "Austria",
+      "Address": "Ferdinand-Piatnik-Weg 2"
+    }
+  ],
+  "MilageAllowance": -1.0,
+  "AllowTripContinuation": false,
+  "Distances": [
+    [
+      "NaN",
+      292.48282523588495,
+      100.46113039881499,
+      564.37748712682969,
+      379.78982609402613,
+      372.7922206195089
+    ],
+    [
+      292.48282523588495,
+      0.0,
+      306.1755323001903,
+      279.02000295894737,
+      341.154964102313,
+      145.65487045757169
+    ],
+    [
+      100.46113039881499,
+      306.1755323001903,
+      0.0,
+      554.57339613736985,
+      295.76880016576678,
+      346.00980077327887
+    ],
+    [
+      564.37748712682969,
+      279.02000295894737,
+      554.57339613736985,
+      0.0,
+      435.59094486931212,
+      215.51895798885147
+    ],
+    [
+      379.78982609402613,
+      341.154964102313,
+      295.76880016576678,
+      435.59094486931212,
+      0.0,
+      245.69246603598498
+    ],
+    [
+      372.7922206195089,
+      145.65487045757169,
+      346.00980077327887,
+      215.51895798885147,
+      245.69246603598498,
+      0.0
+    ]
+  ],
+  "AvgTravelSpeed": 400,
+  "HourlyWage": -60,
+  "HotelCostPerNight": -120,
+  "RevenuePerDayOnsite": 1640,
+  "AllowUnprofitableRequests": true,
+  "PermutateOptions": true
+}
