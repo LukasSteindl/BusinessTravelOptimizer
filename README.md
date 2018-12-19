@@ -17,7 +17,7 @@ It is free to use on your own risk.
 <h1>Installation Instructions</h1>
 
 <ul>
-<li>Clone the Project to your local Machine </li>
+<li>Clone the mroject to your local machine </li>
 <li>
 The project got created with visual studio 2015 professional edition. I guess it should also work with community edition but never tested that.
 </li>
@@ -26,7 +26,7 @@ Make sure you install the Bing-Maps-WPF Control first: https://www.microsoft.com
 <li>
 You also need a Bing-Maps-API-Key:<br>
 https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key <br>
-It has to be entered in the settings1.settings file in the Geocoding Project. (And maybe also in the app.config file in the Geocoding Project)</li>
+It has to be entered in the settings1.settings file in the Geocoding-project. (And maybe also in the app.config file in the Geocoding Project)</li>
 </ul>
 
 Compile it! (There is no compiled version available on the internet, so you need to build it on your own machine atm.)
